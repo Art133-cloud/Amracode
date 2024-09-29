@@ -1,0 +1,596 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Six+Caps&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow: hidden;
+}
+img,h1,h2,h3,h4,h5,h6,p,span,a {
+    user-select: none;
+} 
+.bigTextSectHomePage h1 {
+    font-family: 'Six Caps', sans-serif;
+    font-size: 180px;
+    font-weight: 400;
+    line-height: 236.87px;
+    letter-spacing: 3px;
+    color: rgba(3, 2, 0, 1);
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    align-items: end;
+    flex-wrap: nowrap;
+    gap: 15px;
+}
+.aboutPage {
+    background:rgba(229, 228, 226, 1);
+}
+.homePage {
+    background:rgba(229, 228, 226, 1);
+}
+.clientsPage {
+    background:transparent;
+}
+.forPositionOff {
+    position: relative;
+    top: 0;
+}
+.bigTextSectHomePage h1 span {
+    font-family: 'Six Caps', sans-serif;
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 131.59px;
+    margin-bottom: 20px;
+
+}
+.bigTextSectHomePage h2 {
+    font-family: 'Six Caps', sans-serif;
+    font-size: 180px;
+    font-weight: 400;
+    line-height: 236.87px;
+    letter-spacing: 3px;
+    color: rgba(204, 0, 0, 1);
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    align-items: end;
+    flex-wrap: nowrap;
+    gap: 15px;
+
+}
+.bigTextSectHomePage h2 span {
+    font-family: 'Six Caps', sans-serif;
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 131.59px;
+    color: rgba(3, 2, 0, 1);
+    margin-bottom: 20px;
+}
+.bigTextSectHomePage {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    justify-content: center;
+    position: absolute;
+    top: 300px;
+    right: 0%;
+}
+.contentSectHomePage {
+    background-color: rgba(229, 228, 226, 1);
+    padding: 129px 0 196px 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contentSectHomePage button {
+    width: 315px;
+    padding: 6px 27px 6px 27px;
+    gap: 0px;
+    border-radius: 2px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    cursor: pointer;
+    font-family: Orbitron;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 1);
+    transition: .5s;
+    position: absolute;
+    top: -1950px;
+}
+.buttonSectHomePage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1000;
+}
+.contentSectHomePage button:hover {
+    transform: translateY(3px) translateX(3px);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 1);
+
+}
+.circleParent {
+    position: relative;
+    z-index: 0;
+}
+.circleOpacity {
+    position: absolute;
+    right: -22%;
+    top: -400px;
+    width: 1381px;
+    height: 1381px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    animation: ring 2s infinite linear;
+    transform-origin: center;
+}
+@keyframes ring {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.circleOpacity::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.circleWithBackground {
+    position: relative;
+    width: 1620px;
+    transform-origin:center ;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.circleWithBackgroundchild {
+    position: relative;
+    top: -600px;
+    left: 500px;
+}
+.whiteballs {
+    position: relative;
+    top: -2030px;
+    right: -1170px;
+    width: 600px;    
+}
+.ballOne {
+    position: absolute;
+    top: 150px;
+    right: 25%;
+    transform-origin: -395px 200px;
+    animation: spin 8s infinite linear;
+    animation-delay: 0s;
+}
+.ballTwo {
+    position: absolute;
+    top: 150px;
+    right: 25%;
+    transform-origin: -395px 200px;
+    animation: spin 8s infinite linear;
+    animation-delay: 2.67s;
+}
+.ballThree {
+    position: absolute;
+    top: 150px;
+    right: 25%;
+    transform-origin: -395px 200px;
+    animation: spin 8s infinite linear;
+    animation-delay: 5.37s;
+}
+
+.blackballs {
+    position: relative;
+    top: -2030px;
+    right: -800px;
+    width: 200px;    
+}
+.blackballOne {
+    position: absolute;
+    top: 150px;
+    right: 25%;
+    transform-origin: 290px 210px;
+    animation: spinBlack 8s infinite linear;
+    animation-delay: 0s;
+}
+.blackballTwo {
+    position: absolute;
+    top: 150px;
+    right: 25%;
+    transform-origin: 290px 210px;
+    animation: spinBlack 8s infinite linear;
+    animation-delay: 1.67s;
+}
+.blackballThree {
+    position: absolute;
+    top: 150px;
+    right: 25%;
+    transform-origin: 290px 210px;
+    animation: spinBlack 8s infinite linear;
+    animation-delay: 3.67s;
+}
+@keyframes spinBlack {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+.circleRotateContainer {
+    position: relative;
+    top: -1950px;
+    right: -60%;
+    width: 1400px;
+}
+.spiner {
+    position: absolute;
+    width: 490px;
+    height: 490px;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-radius: 50%;
+    animation: rotate 3s infinite linear;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+.circlesOpacitys {
+    position: relative;
+    right: -10%;
+    top: 140px;
+    width: 200px;
+    height: 200px;
+}
+.circlesOpacitys span {
+    position: absolute;
+    display: block;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    border-radius: 50%;
+    animation: animate 3s ease-in-out infinite;
+}
+.circlesOpacitys span:nth-child(1) {
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    animation-delay: 1.1s;
+}
+.circlesOpacitys span:nth-child(2) {
+    top: 60px;
+    left: 60px;
+    bottom: 60px;
+    right: 60px;
+    animation-delay: .9s;
+}
+.circlesOpacitys span:nth-child(3) {
+    top: 30px;
+    left: 30px;
+    bottom: 30px;
+    right:30px;
+    animation-delay: .7s;
+}
+.reddiv {
+    width: 35px;
+    height: 106px;
+    background: rgba(204, 0, 0, 1);
+}
+.contentAboutPage {
+    display: flex;
+    flex-direction: column;
+    padding-top: 35px;
+}
+.textwithreddiv h2 {
+    font-family: "Six Caps",sans-serif;
+    font-size: 68px;
+    font-weight: 400;
+    line-height: 74px;
+    text-align: right;
+    position: absolute;
+    top: 39px;
+}
+.textwithreddiv {
+    position: relative;
+    width: 297px;
+}
+.topContentAboutPage {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.longtextwithreddiv {
+    width: 389px;
+    padding-top: 124px;
+}
+.longtextwithreddiv p {
+    font-family: "Montserrat",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+.titleBottomContent h2 {
+    font-family: "Montserrat",sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.38px;
+    letter-spacing: 1px;
+}
+.circlesOpacitys span:nth-child(4) {
+    top: 70px;
+    left: 70px;
+    bottom: 70px;
+    right: 70px;
+    animation-delay: .5s;
+}
+.bottomContentAboutPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 18px;
+    margin: 0 auto;
+}
+.textUnderTitle p {
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-align: justify;
+    width: 726px;
+}
+.textUnderTitle {
+    padding-top: 15px;
+}
+.titleBottomContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.line {
+    width: 482px;
+    height: 1px;
+    background: rgba(3, 2, 0, 1);
+}
+.clientsPage {
+    background:rgba(229, 228, 226, 1);
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.logos {
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    top: 15px;
+}
+
+.logos .logoSlide {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    animation: scroll 100s linear infinite;
+    width: calc(250px * 12)
+}
+
+.logos .logoSlide .slide {
+    /* height: 100px; */
+    width: 250px;
+}
+.sectClients {
+    position: relative;
+}
+.textsClients {
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    margin: 0 auto;
+}
+.textsClients h2 {
+    font-family: "Six Caps", sans-serif;
+    font-size: 180px;
+    font-weight: 400;
+    line-height: 237px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+.textsClients p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+}
+.textsClients p span {
+    color: rgba(204, 0, 0, 1);
+}
+@keyframes animate {
+    0%,100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+@media only screen and (max-width: 1165px) {
+    .bigTextSectHomePage h1 {
+        font-size: 120px;
+    }
+    .bigTextSectHomePage h1 span {
+        font-size: 60px;
+    }
+    .bigTextSectHomePage h2 {
+        font-size: 120px;
+    }
+    .bigTextSectHomePage h2 span {
+        font-size: 60px;
+    }
+}
+@media only screen and (max-width: 809px) {
+    .bigTextSectHomePage h1 {
+        font-size: 80px;
+    }
+    .bigTextSectHomePage h1 span {
+        font-size: 60px;
+        margin-bottom: 45px;
+    }
+    .bigTextSectHomePage h2 {
+        font-size: 80px;
+    }
+    .bigTextSectHomePage h2 span {
+        font-size: 60px;
+        margin-bottom: 45px;
+    } 
+    .textUnderTitle p {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 734px) {
+    .titleBottomContent {
+        flex-direction: column;
+    }
+    .line {
+        width: 100%;
+    }
+    .longtextwithreddiv {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 659px) {
+    .bigTextSectHomePage {
+        flex-direction: column;
+        align-items: start;
+        top: 70px;
+        padding-left: 30px;
+    }
+    .bigTextSectHomePage {
+        top: 150px;
+    }
+    .bigTextSectHomePage h2 {
+        position: absolute;
+        top: 150px;
+    }
+    .bigTextSectHomePage h1 {
+        font-size: 180px;
+    }
+    .homePage {
+        background:rgba(229, 228, 226, 1);
+    }
+    .bigTextSectHomePage h1 span {
+        font-size: 80px;
+    
+    }
+    .bigTextSectHomePage h2 {
+        font-size: 150px;
+    
+    }
+    .bigTextSectHomePage h2 span {
+        font-size: 80px;
+    }
+    .topContentAboutPage {
+        flex-direction: column;
+        row-gap: 1px;
+        padding-left: 35px;
+    }
+}
+@media only screen and (max-width: 534px) {
+    .bigTextSectHomePage h1,.bigTextSectHomePage h2  {
+        flex-direction: column;
+        align-items: start;
+    }
+    .bigTextSectHomePage h1 span, .bigTextSectHomePage h2 span{
+        position: absolute;
+        bottom: -125px;
+    }
+    .bigTextSectHomePage {
+        top: 100px;
+    }
+    .bigTextSectHomePage h2 {
+        top: 250px;
+    }
+    .contentSectHomePage button {
+        top: -1850px;
+        width: 100%;
+    }
+    .textsClients p {
+        font-size: 18px;
+    }
+    .textsClients h2 {
+        font-size: 150px;
+    } 
+}
+@media only screen and (max-width: 504px) {
+    .logos {
+        padding-bottom: 70px;
+    }
+}
+@media only screen and (max-width: 440px) {
+    .bigTextSectHomePage {
+        top: 130px;
+    }
+}
+@media only screen and (max-width: 372px) {
+    .bigTextSectHomePage h1 {
+        font-size: 120px;
+    }
+    .bigTextSectHomePage h1 span {
+        font-size: 80px;
+        margin-bottom: 45px;
+    }
+    .bigTextSectHomePage h2 {
+        font-size: 120px;
+    }
+    .bigTextSectHomePage h2 span {
+        font-size: 80px;
+        margin-bottom: 45px;
+    } 
+    .textwithreddiv h2 {
+        font-size: 50px;
+        right: 70px;
+    }
+    .textsClients h2 {
+        font-size: 130px;
+    } 
+}
